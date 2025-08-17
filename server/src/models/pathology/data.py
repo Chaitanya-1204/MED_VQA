@@ -8,7 +8,7 @@ from huggingface_hub import login
 from dotenv import load_dotenv
 import os 
 
-load_dotenv()
+print(load_dotenv())
 # Setup
 HUGGINGFACE_TOKEN = os.getenv("HUGGINGFACE_TOKEN")
 login(token=HUGGINGFACE_TOKEN)
