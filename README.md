@@ -1,13 +1,22 @@
+# MED VQA
 
+## 📋 Table of Contents
+1. [About MED VQA](#-about-med-vqa)
+2. [Setup Instructions](#-setup-instructions)
+3. [Demo Video](#-demo-video)
+4. [Model Training Instructions](#-model-training-instructions)
+5. [Contributors](#-contributors)
 
-## Prerequisites
+## 🩺 About MED VQA
 
-- **Node.js**
-- **Python**
+**MED VQA** is a Visual Question Answering system tailored for the medical domain, supporting both radiology and pathology images. Users can upload an image, ask questions, and receive accurate AI-generated responses using fine-tuned transformer models.
 
----
+Key Features:
+- Specialized models for Radiology and Pathology.
+- Intuitive web-based interface.
+- Custom-trained models on domain-specific datasets.
 
-## Setup Instructions
+## 🛠️ Setup Instructions
 
 ### 1. Install Node.js
 
@@ -22,22 +31,17 @@ sudo apt install nodejs npm
 brew install node
 ```
 
-#### For Windows:
-Download and install Node.js from [https://nodejs.org/](https://nodejs.org/).
-
 #### Verify Installation:
 ```bash
 node --version
 npm --version
 ```
 
----
-
 ### 2. Create and Setup Conda Environment
 
 1. **Create a new Conda environment**:
    ```bash
-   conda create -n vqa_env python=3.8
+   conda create -n vqa_env python=3.10
    ```
 
 2. **Activate the environment**:
@@ -47,12 +51,8 @@ npm --version
 
 3. **Install required packages**:
    ```bash
-   pip install -r server/src/models/pathology/requirements.txt
-
-   pip install -r server/src/models/radiology/requirements.txt
+   pip install -r requirements.txt
    ```
-
----
 
 ### 3. Update Model File Paths
 
@@ -66,8 +66,6 @@ Replace the file paths with the exact full paths of the saved model files in the
 - `final_med_vqa_rad_model.pt`
 - `final_med_vqa_path_model.pt`
 
----
-
 ### 4. Running the Website
 
 1. **Activate the Conda environment**:
@@ -80,8 +78,6 @@ Replace the file paths with the exact full paths of the saved model files in the
    npm start
    ```
 
----
-
 ### 5. Accessing the Website
 
 Open your web browser and navigate to:
@@ -92,17 +88,11 @@ https://localhost:3000
 
 This will open the VQA model interface.
 
----
+## 🎥 Demo Video
 
-### 6. Trial Models Drive Link
+[![Watch the Demo](https://img.youtube.com/vi/bFl-fEqAkVM/0.jpg)](https://youtu.be/bFl-fEqAkVM)
 
-Download the trial models from the following Google Drive link:
-
-[Trial Models Drive Link](https://drive.google.com/drive/folders/1LYL00BNCaEHwiYOCwUy-WWxvgsJpE1dy)
-
----
-
-### 7. Model Training Instructions
+## 🧠 Model Training Instructions
 
 1. **Activate the Conda environment**:
    ```bash
@@ -123,4 +113,10 @@ Download the trial models from the following Google Drive link:
    python main.py
    ```
 
----
+## 👨‍💻 Contributors
+
+- Abhijeet  
+- Chaitanya  
+- Devansh  
+- Sohel  
+- Tousif

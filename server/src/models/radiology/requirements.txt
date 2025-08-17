@@ -1,9 +1,0 @@
-datasets
-torch
-torchvision
-tqdm
-huggingface_hub
-transformers
-nltk
-Pillow
-matplotlib

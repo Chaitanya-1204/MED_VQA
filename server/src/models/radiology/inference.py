@@ -47,6 +47,7 @@ class MedVQAInference:
             print("Current working directory:", os.getcwd(), file=sys.stderr)
             print("Loading model...", file=sys.stderr)
         
+        
         model_path = "/Users/tousif/Desktop/IITK/Academics /Sem 6/CS776/Project/Final Code/server/src/models/radiology/final_med_vqa_rad_model.pt"
         state_dict = torch.load(model_path, map_location=torch.device('cpu'))
         self.model.load_state_dict(state_dict)
