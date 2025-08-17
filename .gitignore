@@ -1,0 +1,8 @@
+node_modules
+final_med_vqa_rad_model.pt
+final_med_vqa_path_model.pt
+uploads
+demo.mov 
+server/src/models/pathology/__pycache__
+server/src/models/radiology/__pycache__
+.env
